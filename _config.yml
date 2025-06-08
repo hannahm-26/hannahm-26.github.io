@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Hallo
-I’m Hannah, a Junior UX and UI Designer.
+I’m Hannah, a Junior UX and UI Designer."
 email: 'jami0821@gmail.com'
 description: "I design with a strong background in frontend engineering and help balance design visions with technical restraints and business capabilities."
 "
