@@ -37,7 +37,7 @@ $secondary: #ff7b7b;
 }
 
 body {
-  background-color: #06151f;
+  background-color: #b5d3e6;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
@@ -50,6 +50,7 @@ h5,
 h6 {
   @extend %merriweather;
   font-weight: 700;
+  color: #362203;
 }
 
 article {

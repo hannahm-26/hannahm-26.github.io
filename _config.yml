@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Hallo
+title: "Hallo,
 I’m Hannah, a Junior UX and UI Designer."
 email: 'max.mustermann@muster.de'
 description: "I design with a strong background in frontend engineering and help balance design visions with technical restraints and business capabilities."
@@ -101,10 +101,7 @@ enable_contact: false
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
-  - { url: '/projects/', text: 'Projects' }
-  - { url: '/resume', text: 'Resume' }
+  - { url: '/downloads/Hannah Mueller CV.zip', text: 'Resume', download: true }
 
 defaults:
 -
