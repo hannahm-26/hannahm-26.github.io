@@ -13,15 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Hallo
+title: "Hallo,
 I’m Hannah, a Junior UX and UI Designer."
-email: 'jami0821@gmail.com'
+email: 'max.mustermann@muster.de'
 description: "I design with a strong background in frontend engineering and help balance design visions with technical restraints and business capabilities."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hannahm-26.github.io" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: 'jamigibbs'
-github_username: 'jamigibbs'
-medium_username: 'blog.jamigibbs.com'
+github_username: 'hannahm-26'
 
 # Build settings
 markdown: kramdown
@@ -50,7 +48,9 @@ pagination:
   per_page: 10
 
   # The permalink structure for the paginated pages (this can be any level deep)
-  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  permalink: /:year
+
+  #permalink: '/page/:num/' # Pages are index.html inside this folder (default)
   #permalink: '/page/:num.html' # Pages are simple html files 
   #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
 
@@ -93,15 +93,21 @@ pagination:
 ############################################################
 
 ### Phantom settings
-footer_text: '© 2018 Jami Gibbs'
-admin_name: 'Jami Gibbs'
+footer_text: '© 2025 Hannah Müller. All rights reserved.'
+admin_name: 'Hannah Müller'
 google_analytics: "UA-9999999-99" # Update with your own tracking ID
 enable_contact: false
 
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
-  - { url: '/projects', text: 'Projects' }
-  - { url: '/resume', text: 'Resume' }
+  - { url: '/downloads/Hannah Mueller CV.zip', text: 'Resume', download: true }
+
+defaults:
+-
+  scope:
+    path: ""
+    type: posts
+  values:
+    permalink: /:categories/:title/
+
