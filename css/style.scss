@@ -22,8 +22,8 @@ $secondary: #ff7b7b;
 %opensans {
   font-family: "Open Sans", sans-serif;
 }
-%merriweather {
-  font-family: "Merriweather", serif;
+%inter {
+  font-family: "Inter", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -37,18 +37,17 @@ $secondary: #ff7b7b;
 }
 
 body {
-  background-color: #06151f;
+  background-color: #ffffff;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
 
 h1,
 h2,
-h3,
-h4,
+h3 h4,
 h5,
 h6 {
-  @extend %merriweather;
+  @extend %inter;
   font-weight: 700;
 }
 
@@ -63,12 +62,57 @@ p {
 
 a {
   @include transition(color 0.2s ease-in-out);
-  &:hover {
-    color: #ff5b33;
-    text-decoration: none;
-  }
+}
+a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 
+//link hover code
+/*
+a::before,
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+*/
 img {
   width: 100%;
 }
@@ -123,7 +167,7 @@ input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 9em 0;
+  margin: 10em 0 2em 0;
   @include bp-xsmall {
     margin: 5em 0 5em 0;
   }
@@ -218,7 +262,6 @@ input.btn {
 	3.0 Posts
 --------------------------------------------------------------*/
 #portfolio .container {
-  margin-top: 10em;
   @include bp-xsmall {
     margin-top: 2em;
   }
@@ -260,7 +303,8 @@ input.btn {
 }
 
 .content-wrap {
-  margin-bottom: 8em;
+  padding: 2em;
+
   @include bp-xsmall {
     margin-bottom: 2em;
   }
@@ -297,15 +341,31 @@ input.btn {
       margin-bottom: 1em;
       margin-top: 1em;
     }
-    .tags,
+    .tags {
+      &:hover {
+        color: #ff5b33;
+        background-color: #f0f0f0;
+      }
+      color: #06151f;
+      background-color: #eceff1;
+      padding: 0.5em 1.5em;
+      display: inline-block;
+      margin-bottom: 0.5em;
+      border-radius: 4px;
+    }
     .categories {
       margin: 2em 0;
       span {
+        &:hover {
+          color: #ff5b33;
+          background-color: #f0f0f0;
+        }
         color: #06151f;
         background-color: #eceff1;
         padding: 0.5em 1.5em;
         display: inline-block;
         margin-bottom: 0.5em;
+        border-radius: 4px;
       }
     }
     .categories span {
@@ -319,6 +379,9 @@ input.btn {
 .post-row {
   align-items: center;
   display: flex;
+  box-shadow: $box-shadow-base;
+  padding: 2em;
+  border-radius: 12px;
 }
 
 /*--------------------------------------------------------------

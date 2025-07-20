@@ -1,18 +1,28 @@
-<div class="container">
-  <div class="hero-container">
-    <div class="hero-content">
-      {% if site.title != '' %}
-      <h1 class="text-center">{{site.title}}</h1>
-      {% endif %} {% if site.description != '' or site.enable_contact == true %}
-      <p class="text-center">
-        {% if site.description != '' %} {{site.description}} {% endif %} {% if
-        site.enable_contact == true %} {% include contact.html %} {% include
-        contact-modal.html %} {% endif %}
-      </p>
-      {% endif %}
+{
+  "links": [
+    {
+      "title": "Twitter",
+      "icon": "fa-twitter",
+      "url": "https://twitter.com/"
+    },
+    {
+      "title": "GitHub",
+      "icon": "fa-github",
+      "url": "https://github.com/"
+    },
+    {
+      "title": "Instagram",
+      "icon": "fa-instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "title": "LinkedIn",
+      "icon": "fa-linkedin",
+      "url": "https://www.linkedin.com/"
+    }
+  ]
+}
 
-      <div class="hero-buttons">
-        {% if site.twitter_username != '' %}
         <a
           href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
           target="_blank"
@@ -33,9 +43,3 @@
           ><button class="btn btn-default btn-lg">
             <i class="fa fa-behance fa-lg"></i>Behance
           </button></a
-        >
-        {% endif %}
-      </div>
-    </div>
-  </div>
-</div>
