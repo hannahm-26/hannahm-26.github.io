@@ -9,6 +9,7 @@
 2.0 Home Hero
   2.1 Contact
 3.0 Posts
+  3.1. Posts Content
 4.0 Footer
 
 --------------------------------------------------------------*/
@@ -383,6 +384,190 @@ input.btn {
   box-shadow: $box-shadow-base;
   padding: 2em;
   border-radius: 12px;
+}
+
+/*--------------------------------------------------------------
+	3.1 Post Content
+--------------------------------------------------------------*/
+.project-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+.project-wrap {
+  display: flex;
+  padding: 2em;
+  flex-direction: column;
+  gap: 4em;
+
+  @include bp-xsmall {
+    margin-bottom: 2em;
+  }
+  @include bp-small {
+    margin-bottom: 2em;
+  }
+  .project-title {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow-base;
+    padding: 2em 4em;
+    border-radius: 12px;
+    @include bp-xsmall {
+      margin-left: 0;
+    }
+  }
+  h1.title {
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+  button {
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .categories {
+    gap: 0.5em;
+    .tags {
+      &:hover {
+        color: #ff5b33;
+        background-color: #f0f0f0;
+      }
+      color: #06151f;
+      background-color: #eceff1;
+      padding: 0.5em 1.5em;
+      display: inline-block;
+      margin-bottom: 0.5em;
+      border-radius: 4px;
+    }
+  }
+  .categories span {
+    color: #b9b1ad;
+    background-color: #efebe9;
+  }
+}
+.step-number {
+  font-size: 24px;
+  font-weight: 600;
+  color: #06151f;
+  margin-right: 1em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eceff1;
+}
+.process-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5em;
+  align-items: center;
+}
+.tool-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+.tool-item {
+  color: #06151f;
+  background-color: #eceff1;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.tool-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tools-grid {
+  display: flex;
+  gap: 16px;
+}
+
+.image-fade-container {
+  position: relative;
+  margin: 0 auto;
+}
+.image-fade-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* Sets the width and height for the images*/
+}
+.image-fade-container .image-one {
+  z-index: 9999;
+  transition: opacity 0.5s linear;
+}
+.image-fade-container:hover > .image-one {
+  opacity: 0;
+}
+
+.fade-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.image-one {
+  animation-name: fadeInOutOne;
+}
+
+.image-two {
+  animation-name: fadeInOutTwo;
+}
+
+@keyframes fadeInOutOne {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOutTwo {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*--------------------------------------------------------------
