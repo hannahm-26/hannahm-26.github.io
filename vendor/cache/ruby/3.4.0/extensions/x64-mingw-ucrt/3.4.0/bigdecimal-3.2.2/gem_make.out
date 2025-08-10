@@ -32,11 +32,11 @@ checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250810-8996-rvktfv sitelibdir\=./.gem.20250810-8996-rvktfv clean
+make DESTDIR\= sitearchdir\=./.gem.20250810-16788-u37rz8 sitelibdir\=./.gem.20250810-16788-u37rz8 clean
 bash.exe: warning: could not find /tmp, please create!
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250810-8996-rvktfv sitelibdir\=./.gem.20250810-8996-rvktfv
+make DESTDIR\= sitearchdir\=./.gem.20250810-16788-u37rz8 sitelibdir\=./.gem.20250810-16788-u37rz8
 generating bigdecimal-x64-mingw-ucrt.def
 bash.exe: warning: could not find /tmp, please create!
 compiling bigdecimal.c
@@ -44,10 +44,10 @@ compiling missing.c
 linking shared-object bigdecimal.so
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250810-8996-rvktfv sitelibdir\=./.gem.20250810-8996-rvktfv install
+make DESTDIR\= sitearchdir\=./.gem.20250810-16788-u37rz8 sitelibdir\=./.gem.20250810-16788-u37rz8 install
 bash.exe: warning: could not find /tmp, please create!
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20250810-8996-rvktfv
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20250810-16788-u37rz8
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20250810-8996-rvktfv sitelibdir\=./.gem.20250810-8996-rvktfv clean
+make DESTDIR\= sitearchdir\=./.gem.20250810-16788-u37rz8 sitelibdir\=./.gem.20250810-16788-u37rz8 clean
 bash.exe: warning: could not find /tmp, please create!
