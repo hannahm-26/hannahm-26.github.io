@@ -17,8 +17,7 @@ title: "Hallo
 I’m Hannah, a Junior UX and UI Designer."
 email: 'max.mustermann@muster.de'
 description: "I design with a strong background in frontend engineering and help balance design visions with technical restraints and business capabilities."
-baseurl: "my-portfolio" # the subpath of your site, e.g. /blog
-url: "https://hannahm-26.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://hmportfolio.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 github_username: 'hannahm-26'
 
 # Build settings
