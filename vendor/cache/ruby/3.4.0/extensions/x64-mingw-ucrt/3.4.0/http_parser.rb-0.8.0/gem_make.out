@@ -3,11 +3,11 @@ C:/Ruby34-x64/bin/ruby.exe extconf.rb
 creating Makefile
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250810-16788-gievxf sitelibdir\=./.gem.20250810-16788-gievxf clean
+make DESTDIR\= sitearchdir\=./.gem.20250810-8996-qiclvr sitelibdir\=./.gem.20250810-8996-qiclvr clean
 bash.exe: warning: could not find /tmp, please create!
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250810-16788-gievxf sitelibdir\=./.gem.20250810-16788-gievxf
+make DESTDIR\= sitearchdir\=./.gem.20250810-8996-qiclvr sitelibdir\=./.gem.20250810-8996-qiclvr
 generating ruby_http_parser-x64-mingw-ucrt.def
 bash.exe: warning: could not find /tmp, please create!
 compiling ruby_http_parser.c
@@ -168,10 +168,10 @@ bash.exe: warning: could not find /tmp, please create!
 linking shared-object ruby_http_parser.so
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250810-16788-gievxf sitelibdir\=./.gem.20250810-16788-gievxf install
+make DESTDIR\= sitearchdir\=./.gem.20250810-8996-qiclvr sitelibdir\=./.gem.20250810-8996-qiclvr install
 bash.exe: warning: could not find /tmp, please create!
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20250810-16788-gievxf
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20250810-8996-qiclvr
 
 current directory: C:/Users/Hannah/Documents/GitHub/hannahm-26.github.io/vendor/cache/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250810-16788-gievxf sitelibdir\=./.gem.20250810-16788-gievxf clean
+make DESTDIR\= sitearchdir\=./.gem.20250810-8996-qiclvr sitelibdir\=./.gem.20250810-8996-qiclvr clean
 bash.exe: warning: could not find /tmp, please create!
