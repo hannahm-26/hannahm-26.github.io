@@ -168,7 +168,7 @@ input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 2em 0;
+  margin: 8em 0 2em 0;
   @include bp-xsmall {
     margin: 5em 0 5em 0;
   }
@@ -194,7 +194,7 @@ input.btn {
     font-size: 48px;
   }
   p {
-    margin: 2em 0 4em 0;
+    margin: 2em 0 2em 0;
   }
   .hero-buttons {
     margin: 0 auto;
@@ -321,8 +321,6 @@ input.btn {
     }
   }
   .content {
-    margin-top: 5em;
-    margin-left: 5em;
     @include bp-xsmall {
       margin-left: 0;
     }
@@ -344,7 +342,6 @@ input.btn {
     }
     .tags {
       &:hover {
-        color: #ff5b33;
         background-color: #f0f0f0;
       }
       color: #06151f;
@@ -358,8 +355,8 @@ input.btn {
       margin: 2em 0;
       span {
         &:hover {
-          color: #ff5b33;
           background-color: #f0f0f0;
+          box-shadow: #000000 0px 4px 8px -2px;
         }
         color: #06151f;
         background-color: #eceff1;
@@ -430,7 +427,6 @@ input.btn {
     gap: 0.5em;
     .tags {
       &:hover {
-        color: #ff5b33;
         background-color: #f0f0f0;
       }
       color: #06151f;
@@ -492,7 +488,22 @@ input.btn {
   display: flex;
   gap: 16px;
 }
-
+.takeaway-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.takeaway-list li {
+  margin-bottom: 1em;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.results-grid {
+  display: grid;
+  gap: 12px;
+  h4 {
+    font-weight: 700;
+  }
+}
 .image-fade-container {
   position: relative;
   margin: 0 auto;
