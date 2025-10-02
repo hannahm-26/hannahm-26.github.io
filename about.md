@@ -267,8 +267,8 @@ permalink: /about/
         <!-- Personal Touch -->
         <div class="project-title">
             <h2>Beyond Design</h2>
-            <p>When I'm not designing, you can find me [add personal interests - e.g., "exploring new coffee shops, hiking local trails, or experimenting with photography"]. I believe diverse experiences fuel creative thinking and help me approach design challenges from fresh perspectives.</p>
-            <p>I'm always eager to connect with fellow designers, developers, and anyone passionate about creating meaningful digital experiences. Let's build something great together!</p>
+            <p>When I'm not designing, I love to read, play video games (currently obsessed with Baldur's Gate 3) and do pilates. I believe diverse experiences fuel creative thinking and help me approach design challenges from fresh perspectives.</p>
+            <p>I'm always eager to connect with fellow designers, developers, and anyone passionate about creating meaningful digital experiences.</p>
         </div>
     </div>
 </body>
