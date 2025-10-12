@@ -9,18 +9,6 @@ permalink: /about/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Section - Portfolio</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            min-height: 100vh;
-            padding: 2rem;
-        }
         .about-content-wrap {
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.95);
@@ -76,6 +64,7 @@ permalink: /about/
             display: flex;
             gap: 1rem;
             margin-bottom: 3rem;
+            flex-wrap: wrap;
         }
         .skill-category {
             padding: 2rem;

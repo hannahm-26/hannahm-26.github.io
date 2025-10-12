@@ -8,16 +8,37 @@
 // other navbar variations.
 
 .navbar {
-  position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
 
   @media (min-width: $grid-float-breakpoint) {
     border-radius: $navbar-border-radius;
+  }
+}
+.navbar-nav {
+  gap: 20px;
+  font-size: 1.5rem;
+  display: flex !important;
+  padding: 8px;
+  &:hover {
+    cursor: pointer;
+    color: $link-hover-color;
+  }
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-hover-color;
+      font-weight: 600;
+    }
   }
 }
 
@@ -63,7 +84,6 @@
     box-shadow: none;
 
     &.collapse {
-      display: block !important;
       height: auto !important;
       padding-bottom: 0; // Override default setting
       overflow: visible !important;
@@ -383,7 +403,6 @@
 // Default navbar
 .navbar-default {
   background-color: $navbar-default-bg;
-  box-shadow: $box-shadow-base;
 
   .navbar-brand {
     color: $navbar-default-brand-color;
