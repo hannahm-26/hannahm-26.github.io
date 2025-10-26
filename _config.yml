@@ -105,6 +105,8 @@ nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
   - { url: '/resume', text: 'Resume' }
+  - { url: '/portfolio', text: 'Portfolio' }
+
 
 defaults:
 -
