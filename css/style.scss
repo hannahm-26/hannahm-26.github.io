@@ -38,9 +38,13 @@ $secondary: #ff7b7b;
 }
 
 body {
-  background-color: #fff3fe;
+  background-color: #fff;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  color: #2c3e50;
 }
 
 h1,

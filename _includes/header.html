@@ -57,8 +57,8 @@
   />
 
   <!-- Favicons -->
-  <link rel="icon" href="{{ site.url }}/img/favicon.png" />
-  <link rel="icon" href="{{ site.url }}/img/favicon.png" />
+  <link rel="icon" href="{{ site.url }}/img/favicon.ico" />
+  <link rel="icon" href="{{ site.url }}/img/favicon.ico" />
 
   <!-- Fonts -->
   <link
@@ -88,7 +88,7 @@
 <body
   class="{{ post.title | downcase | replace:' ','-' | replace:',','' | strip_html }}{% if page.category %} category-{{ page.category }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}"
 >
-  <div id="top" class="navbar">
+  <header id="top" class="navbar">
     {% if site.enable_nav == true %}
     <nav>
       <div id="navbar-nav-items" class="navbar-nav">
@@ -100,5 +100,5 @@
       </div>
     </nav>
     {% endif %}
-  </div>
+  </header>
 </body>

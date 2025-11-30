@@ -7,13 +7,16 @@
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
-.navbar {
+header {
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
   justify-content: center;
   display: flex;
   flex-direction: row;
+  position: sticky;
+  top: 0;
+  background-color: $navbar-default-bg;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
