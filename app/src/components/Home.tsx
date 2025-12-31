@@ -2,7 +2,7 @@
 import React from "react";
 import { posts } from "components/PortfolioItem";
 
-const Home: React.FC = () => {
+export function Home() {
   return (
     <main className="main-content">
       {/* Hero section */}
@@ -59,6 +59,6 @@ const Home: React.FC = () => {
       </section>
     </main>
   );
-};
+}
 
 export default Home;
