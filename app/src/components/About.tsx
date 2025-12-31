@@ -16,6 +16,7 @@ import {
   Divider,
 } from "@mantine/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faCode, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const About: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const About: React.FC = () => {
       {/* Hero */}
       <Stack gap="xs" mb="xl">
         <Badge
-          leftSection={<FontAwesomeIcon icon="fa-solid fa-user" />}
+          leftSection={<FontAwesomeIcon icon={faUser} />}
           variant="light"
           color="red"
           w="fit-content"
@@ -65,7 +66,7 @@ const About: React.FC = () => {
               spacing="xs"
               icon={
                 <ThemeIcon color="red" size={22} radius="xl">
-                  <IconCheck size={14} />
+                  <FontAwesomeIcon icon={faCheck} />
                 </ThemeIcon>
               }
             >
@@ -126,7 +127,7 @@ const About: React.FC = () => {
       <Card shadow="sm" radius="lg" withBorder mb="xl">
         <Group mb="sm" gap="xs">
           <ThemeIcon color="dark" variant="light" radius="xl">
-            <IconCode size={16} />
+            <FontAwesomeIcon icon={faCode} />
           </ThemeIcon>
           <Title order={3}>How content is structured</Title>
         </Group>
